@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/csindex.js"],"names":["module","exports","require","window","_config"],"mappings":"AAAA;;AAEA;;AAEAA,OAAOC,OAAP,GAAiBC,QAAQ,aAAR,EAAuBC,OAAOC,OAAP,IAAkB,EAAzC,CAAjB","file":"csindex.js","sourcesContent":["\"use strict\";\n\n/* global window */\n\nmodule.exports = require(\"./ui-config\")(window._config || {});\n"]}

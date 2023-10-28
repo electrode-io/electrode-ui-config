@@ -1,0 +1,110 @@
+Invoking: clap pkg/check 
+[00:44:26] @xarc/run version 1.1.1 at /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/@xarc+run@1.1.1/node_modules/@xarc/run
+[00:44:26] node.js version v16.19.1 at /Users/s0s0p6u/nvm/nodejs/v16.19.1/bin/node
+[00:44:26] CWD is /Users/s0s0p6u/Desktop/GTP/electrode/packages/electrode-ui-config
+[00:44:26] Applied xclap options from ./package.json
+[00:44:26] Loaded npm scripts from ./package.json into namespace npm
+[00:44:26] Loaded @xarc/run tasks from ./package.json into namespace pkg
+[00:44:26] Loaded ./xclap.js
+[00:44:26] PATH already contains ./node_modules/.bin
+[00:44:26] Process pkg/check serial array [["pkg/lint","compile"],"electrode/check"]
+[00:44:26] -Process pkg/check.S concurrent array ["pkg/lint","compile"]
+[00:44:26] ..Process pkg/lint serial array [["lint-src","electrode/lint"]]
+[00:44:26] ---Process pkg/lint.S concurrent array ["lint-src","electrode/lint"]
+[00:44:26] ....Process electrode/lint serial array [["lint-lib","lint-test"]]
+[00:44:26] -----Process electrode/lint.S concurrent array ["lint-lib","lint-test"]
+[00:44:26] ..Execute npm/compile exec(npm) 'babel --presets=es2015 src -d dist --source-maps'
+[00:44:26] ----Execute npm/lint-src exec(npm) 'eslint src --color'
+[00:44:26] ......Execute electrode/lint-lib eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-node lib --color
+[00:44:26] ------Execute electrode/lint-test eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-test test --color
+src/csindex.js -> dist/csindex.js
+src/ui-config.js -> dist/ui-config.js
+[00:44:32] >>Done Execute npm/compile exec(npm) 'babel --presets=es2015 src -d dist --source-maps' (6.05 sec)
+
+/Users/s0s0p6u/Desktop/GTP/electrode/packages/electrode-ui-config/src/ui-config.js
+  19:3  warning  Assignment to function parameter 'data'  no-param-reassign
+
+✖ 1 problem (0 errors, 1 warning)
+
+[00:44:34] >>>>>>Done Execute electrode/lint-lib eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-node lib --color (7.48 sec)
+[00:44:34] >>>>Done Execute npm/lint-src exec(npm) 'eslint src --color' (7.48 sec)
+[00:44:34] >>>>>>Done Execute electrode/lint-test eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-test test --color (7.54 sec)
+[00:44:34] >>>>>Done Process electrode/lint.S concurrent array ["lint-lib","lint-test"] (7.55 sec)
+[00:44:34] >>>>Done Process electrode/lint serial array [["lint-lib","lint-test"]] (7.56 sec)
+[00:44:34] >>>Done Process pkg/lint.S concurrent array ["lint-src","electrode/lint"] (7.56 sec)
+[00:44:34] >>Done Process pkg/lint serial array [["lint-src","electrode/lint"]] (7.56 sec)
+[00:44:34] >Done Process pkg/check.S concurrent array ["pkg/lint","compile"] (7.56 sec)
+[00:44:34] .Process electrode/check serial array ["lint","test-cov"]
+[00:44:34] --Process pkg/lint serial array [["lint-src","electrode/lint"]]
+[00:44:34] ...Process pkg/lint.S concurrent array ["lint-src","electrode/lint"]
+[00:44:34] ----Process electrode/lint serial array [["lint-lib","lint-test"]]
+[00:44:34] .....Process electrode/lint.S concurrent array ["lint-lib","lint-test"]
+[00:44:34] ----Execute npm/lint-src exec(npm) 'eslint src --color'
+[00:44:34] ......Execute electrode/lint-lib eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-node lib --color
+[00:44:34] ------Execute electrode/lint-test eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-test test --color
+[00:44:36] >>>>>>Done Execute electrode/lint-lib eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-node lib --color (1.81 sec)
+
+/Users/s0s0p6u/Desktop/GTP/electrode/packages/electrode-ui-config/src/ui-config.js
+  19:3  warning  Assignment to function parameter 'data'  no-param-reassign
+
+✖ 1 problem (0 errors, 1 warning)
+
+[00:44:36] >>>>Done Execute npm/lint-src exec(npm) 'eslint src --color' (1.85 sec)
+[00:44:36] >>>>>>Done Execute electrode/lint-test eslint -c /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/electrode-archetype-njs-module-dev@3.0.3/node_modules/electrode-archetype-njs-module-dev/config/eslint/.eslintrc-test test --color (1.91 sec)
+[00:44:36] >>>>>Done Process electrode/lint.S concurrent array ["lint-lib","lint-test"] (1.92 sec)
+[00:44:36] >>>>Done Process electrode/lint serial array [["lint-lib","lint-test"]] (1.92 sec)
+[00:44:36] >>>Done Process pkg/lint.S concurrent array ["lint-src","electrode/lint"] (1.92 sec)
+[00:44:36] >>Done Process pkg/lint serial array [["lint-src","electrode/lint"]] (1.92 sec)
+[00:44:36] ..Execute electrode/test-cov as function
+[00:44:36] ---Execute electrode/.test-cov nyc clap -q test-only
+
+
+  clientUiConfig
+    ✓ should provide ui config for client (83ms)
+    ✓ should provide empty ui without window._config
+
+  hapi-plugin
+    ✓ should register server and set its app.config
+    ✓ should register server without app
+    ✓ should register server without app.config
+
+  config
+    ✓ should have ui
+    fullPath
+      ✓ should return '/test' for undefined or empty ''
+
+  uiConfig
+    ✓ should create fullPath w/o trailing / for empty basePath
+    ✓ should create fullPath w/o trailing / for basePath /
+    ✓ should create fullPath w/o trailing / for basePath /test
+    ✓ should create fullPath w/o trailing / for basePath /test/
+    ✓ should remove trailing / from fullApiPath to create fullApiPath
+    ✓ should handle missing apiPath
+    ✓ should guard against empty config
+
+
+  14 passing (128ms)
+
+-------------------------|----------|----------|----------|----------|-------------------|
+File                     |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-------------------------|----------|----------|----------|----------|-------------------|
+All files                |      100 |      100 |      100 |      100 |                   |
+ electrode-ui-config     |      100 |      100 |      100 |      100 |                   |
+  hapi-plugin.js         |      100 |      100 |      100 |      100 |                   |
+ electrode-ui-config/lib |      100 |      100 |      100 |      100 |                   |
+  index.js               |      100 |      100 |      100 |      100 |                   |
+ electrode-ui-config/src |      100 |      100 |      100 |      100 |                   |
+  csindex.js             |      100 |      100 |      100 |      100 |                   |
+  ui-config.js           |      100 |      100 |      100 |      100 |                   |
+-------------------------|----------|----------|----------|----------|-------------------|
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 35/35 )
+Branches     : 100% ( 21/21 )
+Functions    : 100% ( 8/8 )
+Lines        : 100% ( 32/32 )
+================================================================================
+[00:45:07] >>>Done Execute electrode/.test-cov nyc clap -q test-only (30.69 sec)
+[00:45:07] >>Done Execute electrode/test-cov as function (30.69 sec)
+[00:45:07] >Done Process electrode/check serial array ["lint","test-cov"] (32.61 sec)
+[00:45:07] Done Process pkg/check serial array [["pkg/lint","compile"],"electrode/check"] (40.17 sec)
